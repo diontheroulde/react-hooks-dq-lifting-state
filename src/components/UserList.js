@@ -9,6 +9,7 @@ function UserList(props) {
           key={user.id}
           handleUserClick={() => console.log("u clicked the user")}
           {...user}
+          onHandleChange={props.onHandleChange}
         />
       ))}
     </div>
